@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+ android:background="#ff3dc0ff">
+    <android.support.v4.view.ViewPager
+    android:id="@+id/pager"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</android.support.v4.view.ViewPager>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:layout_below="@+id/button3"
+            android:theme="@style/AppTheme"
+
+            />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text=" Playlists"
+        android:id="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="@id/button3"
+        android:layout_toEndOf="@+id/button3"
+        android:background="#ccff00"/>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Recently Played"
+        android:id="@+id/button3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ccff00"
+        />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="All Songs"
+        android:id="@+id/button"
+        android:layout_alignParentStart="true"  android:background="#ccff00"
+        android:layout_toStartOf="@+id/button3" />
+
+</RelativeLayout >
